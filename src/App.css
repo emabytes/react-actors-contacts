@@ -1,38 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  margin: 10vh auto;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55);
+  font-family: "Raleway", sans-serif;
   color: white;
+  border-radius: 10px;
+  background: linear-gradient(rgba(162, 162, 162, 0.9), rgba(58, 58, 58, 0.8)),
+    url(https://images.unsplash.com/photo-1581390114939-946f9a890a7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80)
+      center/cover no-repeat;
 }
-
-.App-link {
-  color: #61dafb;
+#contact-list {
+  padding: 1vh 0 2vh 1%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-item,
+#contact-list div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+#contact-list img {
+  width: 40%;
+  margin: 5px auto;
+}
+#contact-list div h3 {
+  color: rgb(33, 33, 33);
+  font-size: 1.1em;
+}
+.btn {
+  font-size: 0.7em;
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  outline: none;
+  background-color: rgba(232, 232, 232, 0.736);
+}
+.delete-btn {
+  margin: 0;
+  height: 30px;
+  max-width: 60%;
+  font-size: 0.6em;
 }
